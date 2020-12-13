@@ -29,7 +29,7 @@ GeneratorView.prototype.createPresets = function() {
 		name: 'passphrase',
 		title: 'passphrase',
 		builtIn: true,
-		length: 6
+		length: 4
 	});
 	this.lengthToPseudoValue(this.presets[0]);
 }
