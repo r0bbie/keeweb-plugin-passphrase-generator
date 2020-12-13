@@ -16,7 +16,7 @@ GeneratorView.prototype.generate = function() {
 	}
 	this.password = Array
 		.from({length: this.gen.length}, _ => eff_large_wordlist()[get_random_index()])
-		.join(' ');
+		.join('-');
 	this.showPassword();
 	const isLong = this.password.length > 32;
 	this.resultEl.toggleClass('gen__result--long-pass', isLong);
